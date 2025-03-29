@@ -27,7 +27,7 @@ A React application that integrates with the Reqres API to perform basic user ma
 1. **Clone the repository**
    ```
    git clone https://github.com/katariaNandini/User-Management-App.git
-   cd user-management-app
+   cd User-Management-App
    ```
 
 2. **Install dependencies**
