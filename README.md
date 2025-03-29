@@ -1,70 +1,96 @@
-# Getting Started with Create React App
+# User Management Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React application that integrates with the Reqres API to perform basic user management functions including authentication, listing users, and editing/deleting user information.
 
-## Available Scripts
+![User Management App Screenshot](screenshot.png)
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Authentication**: Secure login with JWT token storage
+- **User Management**: View, edit, and delete users
+- **Pagination**: Navigate through multiple pages of users
+- **Search Functionality**: Filter users by name or email
+- **Responsive Design**: Works on both desktop and mobile devices
+- **Form Validation**: Input validation for login and edit forms
+- **Toast Notifications**: User-friendly success and error messages
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- React 18
+- React Router v6 for navigation
+- Axios for API requests
+- React Toastify for notifications
+- Custom CSS for styling
 
-### `npm test`
+## Live Demo
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[View Live Demo](https://your-username.github.io/user-management-app) (Replace with your actual deployed link)
 
-### `npm run build`
+## Installation and Setup
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone the repository**
+   ```
+   git clone https://github.com/your-username/user-management-app.git
+   cd user-management-app
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Install dependencies**
+   ```
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Start the development server**
+   ```
+   npm start
+   ```
 
-### `npm run eject`
+4. **Open your browser**
+   The application will be available at [http://localhost:3000](http://localhost:3000)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Usage Guide
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Login
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Use the following credentials to log in:
+  - Email: eve.holt@reqres.in
+  - Password: cityslicka
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Users List
 
-## Learn More
+- After logging in, you'll see a list of users
+- Use the search bar to filter users by name or email
+- Navigate between pages using the pagination controls
+- Click "Edit" to modify a user's details
+- Click "Delete" to remove a user
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Edit User
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Update the user's first name, last name, and email
+- Click "Save Changes" to update the user information
+- Click "Cancel" to return to the users list without saving
 
-### Code Splitting
+## API Integration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+This application integrates with the [Reqres API](https://reqres.in/) with the following endpoints:
 
-### Analyzing the Bundle Size
+- **POST /api/login** - User authentication
+- **GET /api/users?page={page}** - Fetch paginated user data
+- **PUT /api/users/{id}** - Update user information
+- **DELETE /api/users/{id}** - Delete a user
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Implementation Details
 
-### Making a Progressive Web App
+- **Authentication**: JWT token stored in localStorage for persistence
+- **Protected Routes**: Unauthorized users are redirected to the login page
+- **Error Handling**: API errors are caught and displayed to the user
+- **Form Validation**: Client-side validation for all input fields
+- **Responsive Design**: Flexbox and CSS Grid for layout
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Future Improvements
 
-### Advanced Configuration
+- Add unit and integration tests
+- Implement user registration functionality
+- Add more advanced filtering and sorting options
+- Implement dark mode theme
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Project Structure
