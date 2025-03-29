@@ -22,15 +22,11 @@ A React application that integrates with the Reqres API to perform basic user ma
 - React Toastify for notifications
 - Custom CSS for styling
 
-## Live Demo
-
-[View Live Demo](https://your-username.github.io/user-management-app) (Replace with your actual deployed link)
-
 ## Installation and Setup
 
 1. **Clone the repository**
    ```
-   git clone https://github.com/your-username/user-management-app.git
+   git clone https://github.com/katariaNandini/User-Management-App.git
    cd user-management-app
    ```
 
@@ -93,4 +89,3 @@ This application integrates with the [Reqres API](https://reqres.in/) with the f
 - Add more advanced filtering and sorting options
 - Implement dark mode theme
 
-## Project Structure
